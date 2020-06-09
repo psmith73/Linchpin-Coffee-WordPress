@@ -2,7 +2,7 @@
 /*                  HEADER                       */
 /* ============================================= */
 
-@mixin header {
+@mixin header ($image, $position-x, $position-y) {
     * {
         font-family: $font-family;
         box-sizing: border-box;
@@ -27,10 +27,14 @@
     
         li {
             padding: 7px;
-            font-size: 17px;
+            font-size: 10px;
             list-style: none;
             margin-top: 10px;
             text-transform: uppercase;
+
+            @media (min-width:769px) {
+                font-size: 17px;
+            } 
         }
     
         li a {
@@ -44,9 +48,21 @@
         }
     }
     
-    .nav-logo {
+    .nav-logo a, 
+    .nav-logo a:visited,
+    .nav-logo a:active,
+    .nav-logo a:focus {
         text-align: center;
         padding-top: 20px;
+        text-decoration: none;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: none;
+            border: none;
+            color: inherit;
+        }
     } 
     
     .linchpin {
@@ -64,27 +80,7 @@
         margin-top: 10px;
         vertical-align: middle;
     }
-
-    @media (min-width: $break) {
-        .nav-menu {
-            padding: 0 50px 0 0;
-        }
-        
-        .nav-logo {
-            padding: 0 0 0 50px;
-        } 
     
-        .nav-name {
-            margin-top: 0;
-        }
-    }
-}
-
-/* ============================================= */
-/*                    BANNER                     */
-/* ============================================= */
-
-@mixin banner ($image, $position-x, $position-y) {
     .banner {
         width: 100%;
         background: linear-gradient(
@@ -131,9 +127,14 @@
 /* ============================================= */
 
 @mixin linchpin {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     margin: 7px;
+
+    @media (min-width:769px) {
+        height: 60px;
+        width: 60px;
+    } 
 }
 
 /* ============================================= */
@@ -221,13 +222,6 @@
             padding:0 35px 10px 0;
         }
     } 
-
-    @media (min-width: 576px){
-        .modal-dialog {
-            max-width: 70%;
-            margin: 1.75rem auto;
-        }
-    }
 }
 
 /* ============================================= */
@@ -254,6 +248,8 @@
             transform: scale(1.1);
             cursor: pointer;
             text-decoration: none;
+            color: $white;
+            border: none;
         }
     }
 
@@ -265,6 +261,7 @@
     a:-webkit-any-link {
         color: $white;
         text-decoration: none;
+        border: none;
     }
 }
 
@@ -306,6 +303,11 @@
         h3 {
             text-transform: uppercase;
             font-weight: 700;
+            font-size: .9rem;
+
+            @media (min-width:769px) {
+                font-size: 1.75rem;
+            } 
         }
     
         p {
@@ -327,7 +329,7 @@
         }
     }
     
-    .social i {
+    .social a {
         font-size: 2.5rem;
         transition: ease-in-out .4s;
         margin: 0 auto;
@@ -335,12 +337,6 @@
     
         &:hover {
             color: $color-secondary;
-        }
-    }
-
-    @media (min-width: $break) {
-        .footer-name {
-            display: inline-block;
         }
     }
 }

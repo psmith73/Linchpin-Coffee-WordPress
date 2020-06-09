@@ -60,17 +60,17 @@ body {
 }
 
 .linchpin {
-    height: 450px;
-    width: 450px;
+    height: 350px;
+    width: 350px;
 }
 
 .name {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
 } 
 
 .slogan {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 400;
     width: 100vw;
 }
@@ -177,6 +177,7 @@ footer {
         text-transform: uppercase;
         font-weight: 700;
         color: $color-primary;
+        font-size: .9rem;
     }
 
     p {
@@ -244,6 +245,19 @@ footer {
     .logo {
        padding-right: 30px;
     }
+
+    .linchpin {
+        height: 450px;
+        width: 450px;
+    }
+
+    .name {
+        font-size: 60px;
+    }
+
+    .slogan {
+        font-size: 50px;
+    }
     
     .col-1 {
         width: 53%;
@@ -256,6 +270,7 @@ footer {
 
     .down-arrow {
         padding-bottom: 20px;
+        margin-right: 3rem;
     }
 
     .col-2 {
@@ -271,4 +286,8 @@ footer {
     .footer-name {
         display: inline-block;
     } 
+
+    .footer h3 {
+        font-size: 1.75rem;
+    }
 }
