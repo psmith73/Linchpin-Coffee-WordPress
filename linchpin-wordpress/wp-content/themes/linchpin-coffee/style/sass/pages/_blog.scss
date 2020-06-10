@@ -4,6 +4,100 @@
 
 @include header(url('../images/drew-beamer-06IteQFtz-Q-unsplash.jpg'), 50%, 53%);
 
+//  {
+//     font-family: $font-family;
+//     box-sizing: border-box;
+// }
+
+// body {
+//     margin: 0 0 178.438px 0;
+//     color: $color-secondary;
+// }
+
+// html {
+//     position: relative;
+//     min-height: 100%;
+// }
+
+// ul {
+//     margin-bottom: 0;
+// }
+
+// .nav-menu {
+//     padding: 0;
+
+//     li {
+//         padding: 10px;
+//         font-size: 17px;
+//         list-style: none;
+//         margin-top: 10px;
+//         text-transform: uppercase;
+//     }
+
+//     li a {
+//         text-decoration: none;
+//         color: $color-primary;
+//         transition: ease-in-out .4s;
+//     }
+
+//     li a:hover {
+//         color: $color-secondary;
+//     }
+// }
+
+// .nav-logo {
+//     text-align: center;
+//     padding-top: 20px;
+// } 
+
+// .linchpin {
+//     @include linchpin
+// }
+
+// .linchpin, 
+// .nav-name {
+//     display: inline-block;
+// }
+
+// .nav-name {
+//     color: $color-primary;
+//     font-size: 25px;
+//     margin-top: 10px;
+//     vertical-align: middle;
+// }
+
+// .banner {
+//     width: 100%;
+//     background: linear-gradient(
+//               rgba(30,30,30, .5), 
+//               rgba(30,30,30, .5)),
+//               url('../images/drew-beamer-06IteQFtz-Q-unsplash.jpg');
+//     background-size: cover;
+//     background-position: 50% 53%;
+//     background-repeat: no-repeat;
+//     height: 297px;
+
+//     h1 {
+//         text-align: center;
+//         padding-top: 20px;
+//         font-size: 40px;
+//         font-weight: 700;
+//         letter-spacing: .3rem;
+//         margin-bottom: 7px;
+//         color: $white;
+//         text-transform: uppercase;
+//         text-shadow: $text-shadow;
+//     }
+// }
+
+// .divide {
+//     height: 0;
+//     width: 45px;
+//     border: 4px solid $color-primary;
+//     margin: 0 auto;
+    
+// }
+
 .blog-posts {
     text-align: center;
     padding: 30px 0;

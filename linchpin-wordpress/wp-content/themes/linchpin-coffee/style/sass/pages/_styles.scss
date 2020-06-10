@@ -1,0 +1,557 @@
+/* ============================================= */
+/*                    NAV                        */
+/* ============================================= */
+
+@include header;
+
+/* ============================================= */
+/*                   FOOTER                      */
+/* ============================================= */
+
+@include footer;
+
+/* ============================================= */
+/*                   STORY                       */
+/* ============================================= */
+
+.story-banner {
+    @include banner (url('../images/matt-hoffman-7zwyUZVrt-U-unsplash.jpg'), 50%, 40%);
+}
+
+.story {
+    @include body-padding;
+}
+
+.column {
+    padding: 1rem 3rem;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+// @include footer;
+
+@media (min-width: $break) {
+    // .nav-menu {
+    //     padding: 0 50px 0 0;
+    // }
+    
+    // .nav-logo {
+    //     padding: 0 0 0 50px;
+    // } 
+
+    // .nav-name {
+    //     margin-top: 0;
+    // }
+    
+    .column1,
+    .column2 {
+        padding: 3rem;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: .1rem;
+    }
+
+    // .footer-name {
+    //     display: inline-block;
+    // }
+}
+
+/* ============================================= */
+/*                   BEANS                       */
+/* ============================================= */
+
+.beans-banner {
+    @include banner (url('../images/coffee-beans-closeup-photography-867466.jpg'), 50%, 70%);
+}
+
+.beans {
+    text-align: center;
+    @include body-padding;
+}
+
+@include coffee-bean;
+
+// @include footer;
+
+@media (min-width: $break) {
+    // .nav-menu {
+    //     padding: 0 50px 0 0;
+    // }
+    
+    // .nav-logo {
+    //     padding: 0 0 0 50px;
+    // } 
+
+    // .footer-name {
+    //     display: inline-block;
+    // }
+}   
+
+
+/* ============================================= */
+/*                  BREW                         */
+/* ============================================= */
+
+.brew-banner {
+    @include banner (url('../images/clear-glass-flasks-2159106.jpg'), 50%, 70%);
+}
+
+.brew-guide {
+    text-align: center;
+    @include body-padding;
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        color: $color-primary;
+    }
+
+    img {
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+    }
+}
+
+.pour-over,
+.cold-brew,
+.french-press {
+    width: 70%;
+    padding: 20px 0;  
+}
+
+.pour-over-description,
+.french-press-description,
+.cold-brew-description {
+    width: 80%;
+    padding-top: 20px;
+
+    p {
+        margin-bottom: 30px;
+        line-height: 2rem;
+        letter-spacing: .03rem;
+    }
+}
+
+@include button;
+
+@include modal;
+  
+// @include footer;
+
+// @media (min-width: 576px){
+//     .modal-dialog {
+//         max-width: 70%;
+//         margin: 1.75rem auto;
+//     }
+// }
+
+@media (min-width: $break) {
+    // .nav-menu {
+    //     padding: 0 50px 0 0;
+    // }
+    
+    // .nav-logo {
+    //     padding:0 0 0 50px;
+    // } 
+    
+    .pour-over-description,
+    .french-press-description,
+    .cold-brew-description {
+        width: 50%;
+
+        p {
+            margin-bottom: 30px;
+            line-height: 2rem;
+            letter-spacing: .03rem;
+        }
+    }
+    
+    .directions {
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+    }
+
+    .equipment li,
+    .directions li {
+        break-inside: avoid-column;
+        page-break-inside: avoid;
+    }
+
+    // .footer-name {
+    //     display: inline-block;
+    // }
+}
+
+
+/* ============================================= */
+/*                 BLOG                          */
+/* ============================================= */
+
+.blog-banner {
+    @include banner (url('../images/drew-beamer-06IteQFtz-Q-unsplash.jpg'), 50%, 53%);
+}
+
+
+//  {
+//     font-family: $font-family;
+//     box-sizing: border-box;
+// }
+
+// body {
+//     margin: 0 0 178.438px 0;
+//     color: $color-secondary;
+// }
+
+// html {
+//     position: relative;
+//     min-height: 100%;
+// }
+
+// ul {
+//     margin-bottom: 0;
+// }
+
+// .nav-menu {
+//     padding: 0;
+
+//     li {
+//         padding: 10px;
+//         font-size: 17px;
+//         list-style: none;
+//         margin-top: 10px;
+//         text-transform: uppercase;
+//     }
+
+//     li a {
+//         text-decoration: none;
+//         color: $color-primary;
+//         transition: ease-in-out .4s;
+//     }
+
+//     li a:hover {
+//         color: $color-secondary;
+//     }
+// }
+
+// .nav-logo {
+//     text-align: center;
+//     padding-top: 20px;
+// } 
+
+// .linchpin {
+//     @include linchpin
+// }
+
+// .linchpin, 
+// .nav-name {
+//     display: inline-block;
+// }
+
+// .nav-name {
+//     color: $color-primary;
+//     font-size: 25px;
+//     margin-top: 10px;
+//     vertical-align: middle;
+// }
+
+// .banner {
+//     width: 100%;
+//     background: linear-gradient(
+//               rgba(30,30,30, .5), 
+//               rgba(30,30,30, .5)),
+//               url('../images/drew-beamer-06IteQFtz-Q-unsplash.jpg');
+//     background-size: cover;
+//     background-position: 50% 53%;
+//     background-repeat: no-repeat;
+//     height: 297px;
+
+//     h1 {
+//         text-align: center;
+//         padding-top: 20px;
+//         font-size: 40px;
+//         font-weight: 700;
+//         letter-spacing: .3rem;
+//         margin-bottom: 7px;
+//         color: $white;
+//         text-transform: uppercase;
+//         text-shadow: $text-shadow;
+//     }
+// }
+
+// .divide {
+//     height: 0;
+//     width: 45px;
+//     border: 4px solid $color-primary;
+//     margin: 0 auto;
+    
+// }
+
+.blog-posts {
+    text-align: center;
+    padding: 30px 0;
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        color: $color-primary;
+    }
+
+    img {
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+    }
+}
+
+.blog-post:nth-child(even) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: 20px 0;  
+}
+
+
+.blog-post:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: 20px 0; 
+}
+
+.blog-post-description {
+    width: 80%;
+    padding-top: 20px;
+}
+
+.tagline,
+.date {
+    line-height: 2rem;
+    letter-spacing: .03rem;
+}
+
+.date {
+    margin-bottom: 30px;
+    display: block;
+    
+}
+
+@include button;
+  
+// @include footer;
+
+@media (min-width: $break) {
+    // .nav-menu {
+    //     padding: 0 50px 0 0;
+    // }
+    
+    // .nav-logo {
+    //     padding:0 0 0 50px;
+    // } 
+    
+    .blog-post-reverse,
+    .blog-post {
+        flex-direction: row;
+    }
+    
+    .blog-post-description {
+        width: 50%;
+    }
+    
+    .timeline,
+    .date {
+        line-height: 2rem;
+        letter-spacing: .03rem;
+    }
+
+    // .footer-name {
+    //     display: inline-block;
+    // }
+}
+
+
+/* ============================================= */
+/*                   POST                        */
+/* ============================================= */
+
+.blog-banner {
+    @include banner (url('../images/drew-beamer-06IteQFtz-Q-unsplash.jpg'), 50%, 53%);
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+
+    @include body-padding;
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        color: $color-primary;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: .1rem;
+    }
+
+    img {
+        height: 400px;
+        width: 300px;
+        padding: 20px 0;
+    }
+}
+
+@include button;
+  
+// @include footer;
+
+@media (min-width: 1024px) {
+    // .nav-menu {
+    //     padding: 0 50px 0 0;
+    // }
+    
+    // .nav-logo {
+    //     padding:0 0 0 50px;
+    // } 
+
+    .post img {
+        height: 600px;
+        width: 400px;
+    }
+
+    // .footer-name {
+    //     display: inline-block;
+    // }
+}
+
+
+/* ============================================= */
+/*                  CONTACT                      */
+/* ============================================= */
+
+.contact-banner {
+    @include banner (url('../images/matt-hoffman-_v0xhIT715g-unsplash.jpg'), 50%, 53%);
+}
+
+.contact-form {
+    @include body-padding;
+}
+
+.chat,
+.form {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .07rem;
+    width: 80%;
+    text-align: center;
+}
+
+.chat h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    letter-spacing: .4rem;
+    color: $color-primary;
+}
+
+form { 
+    max-width: 420px; 
+    margin: 50px auto; 
+}
+
+label {
+    display: none;
+}
+
+#wpforms-103-field_1, 
+#wpforms-103-field_2, 
+#wpforms-103-field_3 {
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid $color-primary;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+
+    &:focus { 
+        border:2px solid $color-primary; 
+    }
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+#wpforms-103-field-hp {
+    display: none;
+}
+
+[type="submit"] {
+    width: 100%;
+    background:$color-primary;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+
+    &:hover { 
+        background:$color-primary; 
+        transform: scale(1.1);
+    }
+}
+
+@include screen-reader-text;
+
+// @include footer;
+
+@media (min-width: $break) {
+    // .nav-menu {
+    //     padding: 0 50px 0 0;
+    // }
+    
+    // .nav-logo {
+    //     padding: 0 0 0 50px;
+    // } 
+    
+    .chat,
+    .form {
+        padding: 3rem 3rem;
+    }
+
+    // .footer-name {
+    //     display: inline-block;
+    // }
+}
